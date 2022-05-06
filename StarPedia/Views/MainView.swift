@@ -9,7 +9,38 @@ import SwiftUI
 
 struct MainView: View {
     
-    @GestureState var scale: CGFloat = 1.0
+    @State private var scale: CGFloat = 1.0
+    @State private var lastScale: CGFloat = 1.0
+    private let minScale = 1.0
+    private let maxScale = 5.0
+    
+    var magnification: some Gesture {
+        MagnificationGesture()
+            .onChanged { state in
+                let delta = state / lastScale
+                scale *= delta
+                lastScale = state
+                
+            }
+            .onEnded { state in
+                validateScaleAllowed()
+                lastScale = 1.0
+                
+            }
+    }
+    
+    func getMinimumScaleAllowed() -> CGFloat {
+        return max(scale, minScale)
+    }
+    
+    func getMaximumScaleAllowed() -> CGFloat {
+        return min(scale, maxScale)
+    }
+    
+    func validateScaleAllowed() {
+        scale = getMaximumScaleAllowed()
+        scale = getMaximumScaleAllowed()
+    }
     
     var body: some View {
         VStack {
@@ -17,15 +48,14 @@ struct MainView: View {
                 Color(.black)
                     .ignoresSafeArea()
             
+                
                 Image("MainBG")
                     .resizable()
                     .scaledToFit()
                     .scaleEffect(scale)
-                    .gesture(MagnificationGesture()
-                        .updating($scale, body: { (value, scale, trans) in
-                            scale = value.magnitude
-                        })
-                    )
+                    .gesture(magnification)
+                    
+                
                 
                 NavigationLink(destination: MoonGridView(), label: {
                     Rectangle()
