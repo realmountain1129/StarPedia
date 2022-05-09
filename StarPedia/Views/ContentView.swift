@@ -1,16 +1,18 @@
 //
 //  ContentView.swift
-//  StarPedia
+//  SkyWiki
 //
-//  Created by Jinsan Kim on 2022/05/06.
+//  Created by Jinsan Kim on 2022/04/28.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            MainView()
+                .navigationBarHidden(true)
+        }
     }
 }
 

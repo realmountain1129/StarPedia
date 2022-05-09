@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "HD wallpaper_ mountain and trees under starry sky illustration, mountain surrounding trees photo.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
