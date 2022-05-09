@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FE6B09D28243258003ACB6C /* StarPediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6B09C28243258003ACB6C /* StarPediaApp.swift */; };
-		2FE6B0A128243259003ACB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE6B0A028243259003ACB6C /* Assets.xcassets */; };
+		2F53206B2829A10A00DCB2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F53206A2829A10A00DCB2D1 /* Assets.xcassets */; };
+		2F53206D2829A11600DCB2D1 /* StarPediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53206C2829A11600DCB2D1 /* StarPediaApp.swift */; };
 		2FE6B0F92824367E003ACB6C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6B0F72824367E003ACB6C /* ModelData.swift */; };
 		2FE6B0FA2824367E003ACB6C /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6B0F82824367E003ACB6C /* Star.swift */; };
 		2FE6B0FC28243684003ACB6C /* starData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FE6B0FB28243684003ACB6C /* starData.json */; };
@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F53206A2829A10A00DCB2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = StarPedia/Assets.xcassets; sourceTree = "<group>"; };
+		2F53206C2829A11600DCB2D1 /* StarPediaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarPediaApp.swift; path = StarPedia/StarPediaApp.swift; sourceTree = "<group>"; };
 		2FE6B09928243258003ACB6C /* StarPedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarPedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FE6B09C28243258003ACB6C /* StarPediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarPediaApp.swift; sourceTree = "<group>"; };
-		2FE6B0A028243259003ACB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE6B0A928243259003ACB6C /* StarPediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarPediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE6B0B328243259003ACB6C /* StarPediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarPediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE6B0F72824367E003ACB6C /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelData.swift; path = StarPedia/Model/ModelData.swift; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 		2FE6B09028243258003ACB6C = {
 			isa = PBXGroup;
 			children = (
-				2FE6B09C28243258003ACB6C /* StarPediaApp.swift */,
-				2FE6B0A028243259003ACB6C /* Assets.xcassets */,
+				2F53206C2829A11600DCB2D1 /* StarPediaApp.swift */,
+				2F53206A2829A10A00DCB2D1 /* Assets.xcassets */,
 				2FE6B108282436FC003ACB6C /* Model */,
 				2FE6B10928243704003ACB6C /* Resources */,
 				2FE6B107282436E2003ACB6C /* Views */,
@@ -232,7 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FE6B0A128243259003ACB6C /* Assets.xcassets in Resources */,
+				2F53206B2829A10A00DCB2D1 /* Assets.xcassets in Resources */,
 				2FE6B0FC28243684003ACB6C /* starData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,8 +261,8 @@
 				2FE6B1022824369C003ACB6C /* StarGridView.swift in Sources */,
 				2FE6B1042824369C003ACB6C /* DetailView.swift in Sources */,
 				2FE6B1062824369C003ACB6C /* ContentView.swift in Sources */,
+				2F53206D2829A11600DCB2D1 /* StarPediaApp.swift in Sources */,
 				2FE6B0FA2824367E003ACB6C /* Star.swift in Sources */,
-				2FE6B09D28243258003ACB6C /* StarPediaApp.swift in Sources */,
 				2FE6B1032824369C003ACB6C /* MainView.swift in Sources */,
 				2FE6B1052824369C003ACB6C /* MoonGridView.swift in Sources */,
 				2FE6B0F92824367E003ACB6C /* ModelData.swift in Sources */,
